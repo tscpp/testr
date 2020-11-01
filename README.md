@@ -17,31 +17,31 @@
 </tr>
 
 <tr align="center">
-<td><img src="https://https://github.com/tscpp/testr/tree/master/assets/error.png" alt="Extension Error" vlign="bottom" valign="bottom"></td>
+<td><img src="https://github.com/tscpp/testr/raw/master/assets/error.png" alt="Extension Error" vlign="bottom" valign="bottom"></td>
 <td><b>Extension Error</b></td>
 <td>Either the extension has failed or Testr is not setup yet. Click the status bar item to quick setup.</td>
 </tr>
 
 <tr align="center">
-<td><img src="https://https://github.com/tscpp/testr/tree/master/assets/success.png" alt="Test Success" vlign="bottom" valign="bottom"></td>
+<td><img src="https://github.com/tscpp/testr/raw/master/assets/success.png" alt="Test Success" vlign="bottom" valign="bottom"></td>
 <td><b>Test Success</b></td>
 <td>The test has succeeded and returned a success exit code. See <a href="#extension-settings">extension settings</a>.</td>
 </tr>
 
 <tr align="center">
-<td><img src="https://https://github.com/tscpp/testr/tree/master/assets/fail.png" alt="Test Failed" vlign="bottom" valign="bottom"></td>
+<td><img src="https://github.com/tscpp/testr/raw/master/assets/fail.png" alt="Test Failed" vlign="bottom" valign="bottom"></td>
 <td><b>Test Failed</b></td>
 <td>The test has failed and returned a unsuccessful exit code. See <a href="#extension-settings">extension settings</a>.</td>
 </tr>
 
 <tr align="center">
-<td><img src="https://https://github.com/tscpp/testr/tree/master/assets/cooldown.png" alt="Test Cooldown" vlign="bottom" valign="bottom"></td>
+<td><img src="https://github.com/tscpp/testr/raw/master/assets/cooldown.png" alt="Test Cooldown" vlign="bottom" valign="bottom"></td>
 <td><b>Test Cooldown</b></td>
 <td>The content change event has been triggered and Testr is waiting for the cooldown. See <a href="#extension-settings">extension settings</a>.</td>
 </tr>
 
 <tr align="center">
-<td><img src="https://https://github.com/tscpp/testr/tree/master/assets/loading.png" alt="Test Running" vlign="bottom" valign="bottom"></td>
+<td><img src="https://github.com/tscpp/testr/raw/master/assets/loading.png" alt="Test Running" vlign="bottom" valign="bottom"></td>
 <td><b>Test Running</b></td>
 <td>The test specified in package.json is running, Testr is blocking any change events.</td>
 </tr>
