@@ -1,0 +1,95 @@
+{
+	"name": "testr",
+	"displayName": "Testr",
+	"description": "Testr runs the npm scripts test in the background to provide a test status in the status bar",
+	"version": "0.0.1",
+	"license": "MIT",
+	"author": "Elias Skogevall",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tscpp/testr.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tscpp/testr/issues"
+	},
+	"homepage": "https://github.com/tscpp/testr#readme",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Debuggers"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "testr.edit",
+				"title": "Edit Testr configuration"
+			}
+		],
+		"configuration": {
+			"title": "Testr",
+			"properties": {
+				"testr.enable": {
+					"type": "boolean",
+					"description": "Enables Testr. Used by auto configuration."
+				},
+				"testr.autoTest": {
+					"type": [
+						"number",
+						"boolean"
+					],
+					"description": "Wether Testr should automatically run the tests, optinally the timeout between changes"
+				},
+				"testr.successExitCodes": {
+					"type": "array",
+					"items": {
+						"type": "number"
+					},
+					"default": [
+						0
+					],
+					"description": "Exit codes Testr should consider as succesful"
+				},
+				"testr.runWith": {
+					"type": "string",
+					"enum": [
+						"terminal",
+						"npm"
+					],
+					"default": "terminal",
+					"description": "Wether Testr should run with terminal or npm. Consider using terminal for performance and speed."
+				},
+				"testr.promptConfig": {
+					"type": "boolean",
+					"default": true,
+					"description": "Wether Testr should prompt to config Testr."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.50.0",
+		"@typescript-eslint/eslint-plugin": "^4.1.1",
+		"@typescript-eslint/parser": "^4.1.1",
+		"eslint": "^7.9.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.0.2",
+		"vscode-test": "^1.4.0"
+	}
+}
